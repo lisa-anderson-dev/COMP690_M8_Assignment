@@ -12,7 +12,7 @@ let employeeList = [
 // IF DOES, RETURN STORAGE OBJECT INTO ARRAY INSTEAD OF POPULATED ARRAY
 
 window.addEventListener('load', () => {
-    employeeList = JSON.parse(localStorage.employees) || employeeList;
+    employeeList = localStorage.employees ? JSON.parse(localStorage.employees) : employeeList;
 
 // GET DOM ELEMENTS
 
